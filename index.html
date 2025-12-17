@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💰 Controle Financeiro Mensal</h1>
+
+<div id="botoesMeses">
+    <!-- Botões dos meses serão gerados automaticamente -->
+</div>
+
+<h2>📥 Entradas</h2>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor (R$)</th>
+            </tr>
+        </thead>
+        <tbody id="entradasBody"></tbody>
+    </table>
+</div>
+<p><strong>Total de Entradas:</strong> R$ <span id="totalEntradas">0,00</span></p>
+
+<h2>💸 Saídas</h2>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Valor (R$)</th>
+                <th>Parcelas</th>
+            </tr>
+        </thead>
+        <tbody id="saidasBody"></tbody>
+    </table>
+</div>
+<p><strong>Total de Saídas:</strong> R$ <span id="totalSaidas">0,00</span></p>
+
+<h2>💰 Resultado do Mês</h2>
+<p><strong>Saldo:</strong> R$ <span id="resultado">0,00</span></p>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

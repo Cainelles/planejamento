@@ -1,0 +1,138 @@
+/* ===== Reset e fonte profissional ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Títulos ===== */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* ===== Botões de filtro ===== */
+#botoesMeses {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#botoesMeses button {
+    padding: 8px 18px;
+    margin: 5px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #007bff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#botoesMeses button:hover,
+#botoesMeses button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* ===== Tabelas ===== */
+.table-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    table-layout: auto;
+    word-break: break-word;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+    color: #333;
+}
+
+table td:nth-child(4),
+table th:nth-child(4) {
+    text-align: center;
+}
+
+/* ===== Tabela de distribuição do saldo ===== */
+#distribuicao table {
+    width: 95%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#distribuicao th, #distribuicao td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    word-break: break-word;
+    text-align: center;
+}
+
+#distribuicao th {
+    background-color: #f1f3f5;
+    font-weight: 600;
+}
+
+/* Totais */
+p {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#totalEntradas { color: green; }
+#totalSaidas { color: red; }
+#resultado { font-size: 1.3em; font-weight: bold; }
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    #botoesMeses button { padding: 6px 12px; font-size: 0.9rem; margin: 3px; }
+    th, td { padding: 8px 6px; font-size: 0.9rem; }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.3em; }
+}
+
+@media (max-width: 480px) {
+    body { padding: 10px; }
+    #botoesMeses button { padding: 5px 10px; font-size: 0.8rem; margin: 2px; }
+    th, td { padding: 6px 4px; font-size: 0.8rem; }
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.1em; }
+}
